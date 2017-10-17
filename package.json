@@ -1,0 +1,8 @@
+{
+  "name": "aprilia-framework",
+  "version": "0.0.1",
+  "description": "Aprilia framework, is an awesome framework to Css",
+  "repository": "git@github.com:Proskynete/Aprilia-framework.git",
+  "author": "Eduardo Alvarez <eduardo.a1993@gmail.com>",
+  "license": "MIT"
+}
