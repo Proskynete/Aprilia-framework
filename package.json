@@ -6,6 +6,10 @@
   "author": "Eduardo Alvarez <eduardo.a1993@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
   }
 }
