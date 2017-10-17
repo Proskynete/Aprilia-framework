@@ -4,5 +4,8 @@
   "description": "Aprilia framework, is an awesome framework to Css",
   "repository": "git@github.com:Proskynete/Aprilia-framework.git",
   "author": "Eduardo Alvarez <eduardo.a1993@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
