@@ -9,6 +9,62 @@
   text-align: center;
   transition: all .15s ease-in-out;
   vertical-align: middle;
-  white-space: nowrap;
+  light-space: nowrap;
   user-select: none;
+}
+
+.is{
+  &-primary{
+    color: $light-color;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  &-secondary{
+    color: $light-color;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+
+  &-success{
+    color: $light-color;
+    background-color: $success-color;
+    border-color: $success-color;
+  }
+
+  &-danger{
+    color: $light-color;
+    background-color: $danger-color;
+    border-color: $danger-color;
+  }
+
+  &-warning{
+    color: $light-color;
+    background-color: $warning-color;
+    border-color: $warning-color;
+  }
+
+  &-info{
+    color: $light-color;
+    background-color: $info-color;
+    border-color: $info-color;
+  }
+
+  &-light{
+    color: $dark-color;
+    background-color: $light-color;
+    border-color: $light-color;
+  }
+
+  &-dark{
+    color: $light-color;
+    background-color: $dark-color;
+    border-color: $dark-color;
+  }
+
+  &-link{
+    font-weight: 400;
+    color: $primary-color;
+    border-radius: 0;
+  }
 }

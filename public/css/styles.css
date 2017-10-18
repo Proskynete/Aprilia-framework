@@ -9,5 +9,50 @@
   text-align: center;
   transition: all .15s ease-in-out;
   vertical-align: middle;
-  white-space: nowrap;
+  light-space: nowrap;
   user-select: none; }
+
+.is-primary {
+  color: #d0d7dd;
+  background-color: #146fd1;
+  border-color: #146fd1; }
+
+.is-secondary {
+  color: #d0d7dd;
+  background-color: #5d6268;
+  border-color: #5d6268; }
+
+.is-success {
+  color: #d0d7dd;
+  background-color: #19702d;
+  border-color: #19702d; }
+
+.is-danger {
+  color: #d0d7dd;
+  background-color: #aa2935;
+  border-color: #aa2935; }
+
+.is-warning {
+  color: #d0d7dd;
+  background-color: #c4970f;
+  border-color: #c4970f; }
+
+.is-info {
+  color: #d0d7dd;
+  background-color: #137b8c;
+  border-color: #137b8c; }
+
+.is-light {
+  color: #111111;
+  background-color: #d0d7dd;
+  border-color: #d0d7dd; }
+
+.is-dark {
+  color: #d0d7dd;
+  background-color: #111111;
+  border-color: #111111; }
+
+.is-link {
+  font-weight: 400;
+  color: #146fd1;
+  border-radius: 0; }
