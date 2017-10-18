@@ -11,6 +11,11 @@
   vertical-align: middle;
   light-space: nowrap;
   user-select: none;
+
+  &:focus, &:hover{
+    outline:0px;
+    text-decoration: none;
+  }
 }
 
 .is{
@@ -18,53 +23,97 @@
     color: $light-color;
     background-color: $primary-color;
     border-color: $primary-color;
+
+    &:hover{
+      background-color: darken($primary-color, 10%);
+    }
   }
 
   &-secondary{
     color: $light-color;
     background-color: $secondary-color;
     border-color: $secondary-color;
+
+    &:hover{
+      background-color: darken($secondary-color, 10%);
+    }
   }
 
   &-success{
     color: $light-color;
     background-color: $success-color;
     border-color: $success-color;
+
+    &:hover{
+      background-color: darken($success-color, 10%);
+    }
   }
 
   &-danger{
     color: $light-color;
     background-color: $danger-color;
     border-color: $danger-color;
+
+    &:hover{
+      background-color: darken($danger-color, 10%);
+    }
   }
 
   &-warning{
     color: $light-color;
     background-color: $warning-color;
     border-color: $warning-color;
+
+    &:hover{
+      background-color: darken($warning-color, 10%);
+    }
   }
 
   &-info{
     color: $light-color;
     background-color: $info-color;
     border-color: $info-color;
+
+    &:hover{
+      background-color: darken($info-color, 10%);
+    }
   }
 
   &-light{
     color: $dark-color;
     background-color: $light-color;
     border-color: $light-color;
+
+    &:hover{
+      background-color: darken($light-color, 10%);
+    }
   }
 
   &-dark{
     color: $light-color;
     background-color: $dark-color;
     border-color: $dark-color;
+
+    &:hover{
+      background-color: darken($dark-color, 10%);
+    }
   }
 
   &-link{
     font-weight: 400;
     color: $primary-color;
     border-radius: 0;
+
+    &, &:hover{
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none;
+    }
+
+    &:focus, &:hover{
+      color: darken($primary-color, 10%);
+      text-decoration: underline;
+      background-color: transparent;
+    }
   }
 }
