@@ -1,16 +1,52 @@
 .button{
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.25;
-  padding: .5rem .75rem;
-  text-align: center;
-  transition: all .15s ease-in-out;
-  vertical-align: middle;
-  light-space: nowrap;
-  user-select: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.25em;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: calc(0.625em - 1px);
+    padding-right: calc(0.625em - 1px);
+    padding-top: calc(0.375em - 1px);
+    position: relative;
+    vertical-align: top;
+    user-select: none;
+    background-color: transparent;
+    border-color: $grey-color;
+    color: $dark-color;
+    cursor: pointer;
+    justify-content: center;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    text-align: center;
+    white-space: nowrap;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+
+    -webkit-box-shadow: none;
+
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+
+    -webkit-touch-callout: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    -webkit-box-pack: center;
+
+    -ms-flex-pack: center;
 
   &:focus, &:hover{
     outline:0px;
@@ -225,5 +261,18 @@
         color: $light-color;
       }
     }
+  }
+
+  &-small{
+    border-radius: 2px;
+    font-size: 0.75rem;
+  }
+
+  &-medium{
+    font-size: 1.25rem;
+  }
+
+  &-large{
+    font-size: 1.5rem;
   }
 }
