@@ -4,6 +4,7 @@ const gulp          = require('gulp');
 const sass          = require('gulp-sass');
 const sourcemaps    = require('gulp-sourcemaps');
 const autoprefixer  = require('gulp-autoprefixer');
+const minify        = require('gulp-minify');
 const browserSync   = require('browser-sync').create();
 const reload        = browserSync.reload;
 
@@ -27,8 +28,9 @@ gulp.task('sass', () =>{
     return gulp.src("./assets/scss/*.scss")
         .pipe(sourcemaps.init())
         .pipe(autoprefixer({browsers: ["last 2 version", "> 5% in US", "ie 8", "ie 7"], cascade: false}))
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-        .pipe(sourcemaps.write())
+        .pipe(sass())
+        .pipe(minify({ext:{src:'-min.css', min:'.css'}}))
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest("./public/css"))
         .pipe(browserSync.stream());
 });
