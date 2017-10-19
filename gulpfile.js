@@ -23,7 +23,9 @@ gulp.task('watch', () => {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', () =>{
     return gulp.src("./assets/scss/*.scss")
-        .pipe(sass())
+        .pipe(sourcemaps.init())
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest("./public/css"))
         .pipe(browserSync.stream());
 });
