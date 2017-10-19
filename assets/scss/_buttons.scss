@@ -26,27 +26,12 @@
     padding-right: 0.75em;
     text-align: center;
     white-space: nowrap;
-
-    -moz-appearance: none;
-    -webkit-appearance: none;
-
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-
-    -webkit-box-shadow: none;
-
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-
-    -webkit-touch-callout: none;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-
-    -webkit-box-pack: center;
-
-    -ms-flex-pack: center;
+    appearance: none;
+    box-align: center;
+    box-shadow: none;
+    box-pack: start;
+    user-select: none;
+    box-pack: center;
 
   &:focus, &:hover{
     outline:0px;
