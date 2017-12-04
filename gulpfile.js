@@ -5,6 +5,7 @@ const sass          = require('gulp-sass');
 const sourcemaps    = require('gulp-sourcemaps');
 const autoprefixer  = require('gulp-autoprefixer');
 const minify        = require('gulp-minify');
+const ghPages       = require('gulp-gh-pages');
 const browserSync   = require('browser-sync').create();
 const reload        = browserSync.reload;
 
@@ -15,6 +16,11 @@ gulp.task('server', () =>{
             baseDir: "./"
         }
     });
+});
+
+gulp.task('deploy', () => {
+    return gulp.src('./**/*')
+        .pipe(ghPages());
 });
 
 // Watch html and scss files
