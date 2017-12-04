@@ -37,4 +37,17 @@
       margin-top: 0;
     }
   }
+
+
+  .footer {
+    align-items: stretch;
+    border-top: 1px solid $grey-color;
+    display: flex;
+
+    .container {
+      padding: 1rem;
+      text-align: center;
+      width: 100%;
+    }
+  }
 }
