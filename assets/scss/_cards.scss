@@ -1,0 +1,53 @@
+.card {
+  background-color: $white-color;
+  box-shadow: 0 2px 3px $box-shadow-color, 0 0 0 1px $box-shadow-color;
+  color: $dark-color;
+  max-width: 100%;
+  position: relative;
+
+  .header {
+    align-items: stretch;
+    box-shadow: 0 1px 2px $box-shadow-color;
+    display: flex;
+
+    .title {
+      align-items: center;
+      color: $dark-color;
+      display: flex;
+      flex-grow: 1;
+      font-size: 1.12em;
+      font-weight: 700;
+      padding: .75rem;
+    }
+
+    .icon {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      padding: .75rem;
+    }
+  }
+
+  .body {
+    padding: 1.5rem;
+
+    .content {
+      margin-bottom: 1rem;
+      margin-top: 0;
+    }
+  }
+
+
+  .footer {
+    align-items: stretch;
+    border-top: 1px solid $grey-color;
+    display: flex;
+
+    .container {
+      padding: 1rem;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

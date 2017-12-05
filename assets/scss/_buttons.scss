@@ -1,246 +1,227 @@
-.button{
-    align-items: center;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    box-shadow: none;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    font-size: 1rem;
-    height: 2.25em;
-    justify-content: flex-start;
-    line-height: 1.5;
-    padding-bottom: calc(0.375em - 1px);
-    padding-left: calc(0.625em - 1px);
-    padding-right: calc(0.625em - 1px);
-    padding-top: calc(0.375em - 1px);
-    position: relative;
-    vertical-align: top;
-    user-select: none;
-    background-color: transparent;
-    border-color: $grey-color;
-    color: $dark-color;
-    cursor: pointer;
-    justify-content: center;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    text-align: center;
-    white-space: nowrap;
-    appearance: none;
-    box-align: center;
-    box-shadow: none;
-    box-pack: start;
-    user-select: none;
-    box-pack: center;
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-color: $grey-color;
+  border-radius: 3px;
+  box-shadow: none;
+  color: $dark-color;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(.375em - 1px);
+  padding-left: calc(.625em - 1px);
+  padding-right: calc(.625em - 1px);
+  padding-top: calc(.375em - 1px);
+  position: relative;
+  text-align: center;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
 
-  &:focus, &:hover{
-    outline:0px;
+  &:focus,
+  &:hover {
+    outline: 0;
     text-decoration: none;
   }
 }
 
-.is{
-  &-primary{
+.is {
+  &-primary {
     background-color: $primary-color;
     border-color: $primary-color;
     color: $light-color;
 
-    &:hover{
+    &:hover {
       background-color: darken($primary-color, 10%);
     }
   }
 
-  &-secondary{
+  &-secondary {
     background-color: $secondary-color;
     border-color: $secondary-color;
     color: $light-color;
 
-    &:hover{
+    &:hover {
       background-color: darken($secondary-color, 10%);
     }
   }
 
-  &-success{
+  &-success {
     background-color: $success-color;
     border-color: $success-color;
     color: $light-color;
 
-    &:hover{
+    &:hover {
       background-color: darken($success-color, 10%);
     }
   }
 
-  &-danger{
+  &-danger {
     background-color: $danger-color;
     border-color: $danger-color;
     color: $light-color;
 
-    &:hover{
+    &:hover {
       background-color: darken($danger-color, 10%);
     }
   }
 
-  &-warning{
+  &-warning {
     background-color: $warning-color;
     border-color: $warning-color;
     color: $light-color;
 
-    &:hover{
+    &:hover {
       background-color: darken($warning-color, 10%);
     }
   }
 
-  &-info{
+  &-info {
     background-color: $info-color;
     border-color: $info-color;
     color: $light-color;
 
-    &:hover{
+    &:hover {
       background-color: darken($info-color, 10%);
     }
   }
 
-  &-light{
+  &-light {
     background-color: $light-color;
     border-color: $light-color;
     color: $dark-color;
 
-    &:hover{
+    &:hover {
       background-color: darken($light-color, 10%);
     }
   }
 
-  &-dark{
+  &-dark {
     background-color: $dark-color;
     border-color: $dark-color;
     color: $light-color;
 
-    &:hover{
+    &:hover {
       background-color: darken($dark-color, 10%);
     }
   }
 
-  &-link{
+  &-link {
     border-radius: 0;
     color: $primary-color;
     font-weight: 400;
 
-    &, &:hover{
+    &,
+    &:hover {
       background-color: transparent;
       border-color: transparent;
       box-shadow: none;
     }
 
-    &:focus, &:hover{
+    &:focus,
+    &:hover {
       background-color: transparent;
       color: darken($primary-color, 10%);
       text-decoration: underline;
     }
   }
 
-  &-outline{
-    &-primary{
+  &-outline {
+    &-primary {
       background-color: transparent;
       border-color: $primary-color;
       color: $primary-color;
 
-      &:hover{
+      &:hover {
         background-color: $primary-color;
         border-color: $primary-color;
         color: $light-color;
       }
     }
 
-    &-secondary{
+    &-secondary {
       background-color: transparent;
       border-color: $secondary-color;
       color: $secondary-color;
 
-      &:hover{
+      &:hover {
         background-color: $secondary-color;
         border-color: $secondary-color;
         color: $light-color;
       }
     }
 
-    &-success{
+    &-success {
       background-color: transparent;
       border-color: $success-color;
       color: $success-color;
 
-      &:hover{
+      &:hover {
         background-color: $success-color;
         border-color: $success-color;
         color: $light-color;
       }
     }
 
-    &-danger{
+    &-danger {
       background-color: transparent;
       border-color: $danger-color;
       color: $danger-color;
 
-      &:hover{
+      &:hover {
         background-color: $danger-color;
         border-color: $danger-color;
         color: $light-color;
       }
     }
 
-    &-warning{
+    &-warning {
       background-color: transparent;
       border-color: $warning-color;
       color: $warning-color;
 
-      &:hover{
+      &:hover {
         background-color: $warning-color;
         border-color: $warning-color;
         color: $light-color;
       }
     }
 
-    &-info{
+    &-info {
       background-color: transparent;
       border-color: $info-color;
       color: $info-color;
 
-      &:hover{
+      &:hover {
         background-color: $info-color;
         border-color: $info-color;
         color: $light-color;
       }
     }
 
-    &-danger{
-      background-color: transparent;
-      border-color: $danger-color;
-      color: $danger-color;
-
-      &:hover{
-        background-color: $danger-color;
-        border-color: $danger-color;
-        color: $light-color;
-      }
-    }
-
-    &-light{
+    &-light {
       background-color: transparent;
       border-color: $light-color;
       color: $light-color;
 
-      &:hover{
+      &:hover {
         background-color: $light-color;
         border-color: $light-color;
         color: $dark-color;
       }
     }
 
-    &-dark{
+    &-dark {
       background-color: transparent;
       border-color: $dark-color;
       color: $dark-color;
 
-      &:hover{
+      &:hover {
         background-color: $dark-color;
         border-color: $dark-color;
         color: $light-color;
@@ -248,16 +229,16 @@
     }
   }
 
-  &-small{
+  &-small {
     border-radius: 2px;
-    font-size: 0.75rem;
+    font-size: .75rem;
   }
 
-  &-medium{
+  &-medium {
     font-size: 1.25rem;
   }
 
-  &-large{
+  &-large {
     font-size: 1.5rem;
   }
 }
